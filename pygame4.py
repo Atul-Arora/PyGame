@@ -12,12 +12,21 @@ clock = pygame.time.Clock()
 
 pygame.display.set_caption("Runner")
 
+test_surface = pygame.Surface((200,100)) #Surface S shpuld be capital
+test_surface.fill("Red")
+test_surface2 = pygame.Surface((100,200)) 
+test_surface2.fill("Yellow")
+
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit() 
             exit() 
-    #Draw all elements
-    #update everything
+    
+    screen.blit(test_surface,(0,0))  #Blitt is block image transfer . fancy way of saying one surface on other surface
+    screen.blit(test_surface2,(200,100))
+
+
     pygame.display.update()
     clock.tick(60)  
