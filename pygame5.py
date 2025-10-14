@@ -1,3 +1,8 @@
+"""#CREATING A TEXT
+ - Create a Font 
+ - Write Text on a surface 
+ - blit the text surface"""
+
 import pygame 
 from sys import exit
 
@@ -5,11 +10,15 @@ from sys import exit
 pygame.init()
 screen = pygame.display.set_mode((800,400))  
 clock = pygame.time.Clock()  
+test_font=pygame.font.Font("font/Pixeltype.ttf",50)
+#test_font=pygame.font.Font("TYPE,SIZE")  [If type =None ==> Defualt ]
 
 pygame.display.set_caption("Runner")
 
 sky_surface = pygame.image.load("Graphics/sky.png")
 ground_surface = pygame.image.load("Graphics/ground.png")
+text_surface=test_font.render("My Game",True,"Black")
+#text_surface=test_font.render("Text",Anti Aliasing ,"color")
 
 
 while True:
@@ -20,6 +29,7 @@ while True:
     
     screen.blit(sky_surface,(0,0))
     screen.blit(ground_surface,(0,300))
+    screen.blit(text_surface,(300,50))
     #The one we write first is made first in python (overlapping occurs based on order of writing code)
 
     pygame.display.update()
