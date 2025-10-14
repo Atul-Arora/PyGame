@@ -7,10 +7,6 @@ surf.convert_alpha():
 -Necessary for PNGs with transparent regions or for per-pixel alpha blending.
 -Useful when you need smooth semi-transparent edges."""
 
-
-
-
-
 import pygame 
 from sys import exit
 

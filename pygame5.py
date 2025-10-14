@@ -17,7 +17,7 @@ pygame.display.set_caption("Runner")
 
 sky_surface = pygame.image.load("Graphics/sky.png")
 ground_surface = pygame.image.load("Graphics/ground.png")
-text_surface=test_font.render("My Game",True,"Black")
+text_surface=test_font.render("My Game",False,"Black")
 #text_surface=test_font.render("Text",Anti Aliasing ,"color")
 
 
