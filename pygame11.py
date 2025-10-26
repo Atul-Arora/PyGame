@@ -1,4 +1,6 @@
 #Colours with the use of rgb and hex codes
+#The player character 
+#1.Keyboard input 
 
 import pygame
 from sys import exit
