@@ -1,6 +1,8 @@
 #Colours with the use of rgb and hex codes
 #The player character 
-#1.Keyboard input 
+#1.Keyboard input #2.jump + gravity #3.Creating a floor
+
+#KEYBOARD IMPUT - pygame.key OR event loop
 
 import pygame
 from sys import exit
@@ -33,8 +35,11 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit() 
             exit() 
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:
+                print("jump")
 
-        
+        #Keyboard imput in event loop - 1.check if any button was pressed 2.wprk with a specific key         
 
     screen.blit(sky_surface,(0,0))
     screen.blit(ground_surface,(0,300))
@@ -49,11 +54,13 @@ while True:
         snail_rect.left=800
     screen.blit(snail_surf,(snail_rect))
     screen.blit(player_surf,player_rect) 
-    
+
+    """keys = pygame.key.get_pressed()
+    if keys[pygame.K_SPACE]:
+        print("jump")"""
     
 
     pygame.display.update()
     clock.tick(60)  
-
 
 
