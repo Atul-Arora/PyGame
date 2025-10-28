@@ -48,7 +48,7 @@ while True:
 
     screen.blit(sky_surface,(0,0))
     screen.blit(ground_surface,(0,300))
-    screen.blit(score_surf,score_rect)
+    screen.blit(score_surf,(300,50))
 
     snail_rect.x -= 4
     if snail_rect.right<=0:
