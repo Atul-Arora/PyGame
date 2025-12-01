@@ -12,7 +12,7 @@ at the same time for example something that video game developers are very much 
 pygame.init()
 screen = pygame.display.set_mode((800,400))  
 clock = pygame.time.Clock()  #make sure the C in Clock() should be capital . 
-#By itself this clock object wont do anything but we will call i
+#By itself this clock object wont do anything but we will call it
 
 pygame.display.set_caption("Runner")
 
