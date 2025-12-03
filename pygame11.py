@@ -45,14 +45,15 @@ while True:
     screen.blit(ground_surface,(0,300))
     pygame.draw.rect(screen,"#c0e8ec",score_rect) 
     pygame.draw.rect(screen,"#c0e8ec",score_rect,10)  
-     
+    #If width = 0 → fills the rectangle completely (solid)
+    #If width > 0 → draws only the border with that thickness
 
     screen.blit(score_surf,score_rect)
 
     snail_rect.x -= 4
     if snail_rect.right<=0:
         snail_rect.left=800
-    screen.blit(snail_surf,(snail_rect))
+    screen.blit(snail_surf,snail_rect)
     screen.blit(player_surf,player_rect) 
 
     """keys = pygame.key.get_pressed()

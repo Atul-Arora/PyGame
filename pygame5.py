@@ -11,7 +11,7 @@ pygame.init()
 screen = pygame.display.set_mode((800,400))  
 clock = pygame.time.Clock()  
 test_font=pygame.font.Font("font/Pixeltype.ttf",50)
-#test_font=pygame.font.Font("TYPE,SIZE")  [If type =None ==> Defualt ]
+#test_font=pygame.font.Font("TYPE,SIZE")  [If type = None ==> Default ]
 
 pygame.display.set_caption("Runner")
 

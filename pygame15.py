@@ -29,7 +29,9 @@ def obstacle_movement(obstacle_list):
             obstacle_rect.x -= 5
 
             screen.blit(snail_surf,obstacle_rect)
-    return obstacle_list
+        return obstacle_list
+
+    else: return []
 
 pygame.init()
 screen = pygame.display.set_mode((800,400))  
@@ -69,7 +71,7 @@ game_msg_rect = game_msg.get_rect(center=(400,320))
 
 #Timer
 obstacle_timer = pygame.USEREVENT + 1
-pygame.time.set_timer(obstacle_timer,900)
+pygame.time.set_timer(obstacle_timer,1500)
 
 while True:
     for event in pygame.event.get():
